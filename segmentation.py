@@ -111,13 +111,15 @@ def map_segmentation(img,num_classes):
 
 
 def anisotropic_segmentation(img,post_prob,num_classes=4):
-
+    """ Adapted from work of P.D. Kovesi. Matlab code,
+        see [http://www.peterkovesi.com/matlabfns/]
+    """
     height,width = img.shape
 
     prob_matrix = np.zeros((height,width,num_classes))
 
     for ii in range(num_classes):
-        
+
         prob_matrix[:,:,ii] = np.reshape(post_prob[ii,:],(height,width))
 
     # number of iterations
