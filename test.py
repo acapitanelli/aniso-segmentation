@@ -15,6 +15,11 @@ for ii in range(width):
     for jj in range(height):
         data[jj,ii] = pixels[ii,jj]
 
+fig, ax = plt.subplots()
+ax.imshow(data, extent=[0,width-1,0,height-1])
+ax.set_title('original image')
+
+plt.savefig(path.join('test','original.png'))
 
 # image segmentation
 # ------------------------------------------------------- #
