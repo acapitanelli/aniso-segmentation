@@ -24,7 +24,7 @@ Dealing with ordinary picture, here pixel intensity is assumed to follow a norma
 
 A test image with four different textures is generated, then moltiplicative gaussian noise (speckle) is inserted.
 
-[Test Image](test/test_image.png)
+![Test Image](/test/test_image.png)
 
 Then just type:
 
@@ -33,6 +33,6 @@ Then just type:
 
 Result of segmentation will be saved in `\test` folder.
 
-[Coarse segmented](test/map.png)
+![Coarse segmented](/test/map.png)
 
-[Fine segmented](test/anisotropic.png)
+![Fine segmented](/test/anisotropic.png)
